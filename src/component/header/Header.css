@@ -1,0 +1,116 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.header__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem dashed;
+    border-color: #d7dee4;
+    color: #8d8d8f;
+}
+.icon:hover{
+    border-color: #707274;
+}
+
+.icon__1{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.7rem 0.8rem;
+
+}
+
+.icon__2{
+    display: none;
+}
+
+.profile__img{
+    border-radius: 50%;
+    width: 9rem;
+    background-color: #d9dbdd0d;
+}
+.header__profile-img{
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    width: 9rem;
+    height: 9rem;
+}
+
+.user__name{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.slack{
+display: none;
+}
+
+.share__desktop {
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 25px;
+    right: 3.8rem;
+    width: 7rem;
+};
+
+
+.share__desktop::before{
+    border-radius: 1px;
+    box-shadow: 0 12px 16px -4px rgb(16 24 40 / 8%), 0 4px 6px -2px rgb(16 24 40 / 3%);
+    content: "";
+    height: 20px;
+    right: -3px;
+    -webkit-transform: matrix(.71,-.71,.71,.71,0,0);
+    transform: matrix(.71,-.71,.71,.71,0,0);
+    width: 20px;
+    z-index: -1;
+}
+
+.share__desktop{
+    background-color: #101828;
+    position: absolute;
+}
+
+.share__desktop::before{
+    background-color: #101828;
+    position: absolute;
+    border-radius: 1px;
+    box-shadow: 0 12px 16px -4px rgb(16 24 40 / 8%), 0 4px 6px -2px rgb(16 24 40 / 3%);
+    content: "";
+    height: 20px;
+    right: -3px;
+    -webkit-transform: matrix(.71,-.71,.71,.71,0,0);
+    transform: matrix(.71,-.71,.71,.71,0,0);
+    width: 20px;
+}
+ 
+@media screen and (max-width: 600px){
+    .icon__2{
+        display: flex;
+        font-size: 1rem;
+        border-radius: 50%;
+        padding: 0.7rem 0.8rem;
+    }
+
+    .icon__1{
+        display: none;
+    }
+}

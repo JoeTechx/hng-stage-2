@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3.3rem 0 2rem;
+}
+
+.slack__img {
+  width: 2rem;
+}
+
+.git__icon {
+  font-size: 1.69rem;
+}
+
+.git__link {
+  color: #2f2424;
+}

@@ -1,0 +1,27 @@
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+
+}
+
+hr{
+    color:#f6f6f6
+}
+
+.i4g__logo{
+    width: 10rem;
+}
+
+.footer__title{
+    color:#505154
+}
+
+@media screen and (max-width: 756px){
+    .footer__content{
+    flex-direction: column;
+    gap: 3rem;
+    
+    }
+}

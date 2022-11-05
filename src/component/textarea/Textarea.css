@@ -1,0 +1,30 @@
+.textarea__input{
+    display: grid;
+    margin-bottom: 3rem;
+    position: relative;
+    top: 5rem;
+    right: 19rem;
+    width: 40.6rem;
+}
+
+textarea{
+    resize: none;
+    padding: 0.5rem 1rem 0.5rem 0.2rem;
+    border-radius:0.5rem;
+    outline: none;
+    border: 1.9px solid #c4c3c3;
+}
+
+
+@media screen and (max-width:860px){
+    .textarea__input{
+        display: grid;
+        margin-bottom: 3rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 19rem;
+    }
+    
+    }
+
