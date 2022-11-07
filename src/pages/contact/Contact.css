@@ -1,7 +1,7 @@
 .app{
     height: 100vh;
-    width: 100vw;
-    margin: auto;
+    width: auto;
+    margin: -1rem 10rem 0 0;
     display: grid;
     place-content: center;
 }
@@ -9,7 +9,7 @@
 form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 30rem;
+    width: 35vw;
 }
  
 button{
@@ -20,8 +20,7 @@ button{
     align-items:center;
     border-radius:0.5rem;
     outline: none;
-    background-color:#066bf0;
-    color: #ffffff;
+   
     border:none;
     text-transform: uppercase;
     cursor:pointer;
@@ -43,9 +42,80 @@ button{
     font-weight:400;
 }
 
-@media screen and (max-width:860px){
+.btn__submit {
+    margin: auto;
+    position: relative;
+top: 4rem;
+    right: 46%;
+    text-align: center;
+}
+.submit {
+    margin: auto;
+    text-align: center;
+    width: 41rem !important;
+    padding: 1rem !important;
+    background-color:#066bf0 !important;
+    color: #ffffff  !important;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 400ms all ease;
+}
+
+
+
+@media screen and (max-width:756px){
+    form{
+        margin:auto;
+        width: 75vw;
+    }
+
+    .app{
+        margin: -1rem 5rem 0 0;
+    }
+
+
+    button{
+    top: 36rem;
+    padding: 0.8rem 14.3rem;
+}
+
+.btn__submit {
+top: 6rem;
+    right: 48%;
+}
+.submit {
+    width: 36rem !important;
+    padding: 0.9rem !important;
+}
+
+}
+
+@media screen and (max-width:600px){
     form{
         grid-template-columns: 1fr;
         margin:auto;
+        width: 24rem;
     }
+
+    .app{
+    margin: -1rem 0 0 6rem;
+    }
+
+    .contact__header {
+        width: 70vw;
+    }
+
+    button {
+        top: 37rem;
+        padding: 0.8rem 5.3rem;
+    }
+    
+    
+.btn__submit {
+    top: -2rem;
+    right: 15%;
+}
+.submit {
+    width: 16.9rem !important;
+}
 }

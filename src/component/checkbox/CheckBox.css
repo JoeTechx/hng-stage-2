@@ -17,7 +17,17 @@
     margin-top: 0.5rem;
 }
 
-.checkbox__input{
-    /* border:1px solid #066bf0; */
-  
+
+@media screen and (max-width:756px){
+.checkbox{
+    margin-bottom: 0;
+    margin-right: -8rem;
+}
+}
+@media screen and (max-width:600px){
+    .checkbox {
+        margin-bottom: 0px;
+        margin-right: 5rem;
+        top: -3rem;
+    }
 }

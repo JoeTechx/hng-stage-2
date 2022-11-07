@@ -32,6 +32,12 @@ label{
     /* justify-content: center; */
 }
 
+.formInput:nth-child(1){
+    width: 19rem;
+    position: relative;
+    left: 0;
+}
+
 .formInput:nth-child(2){
     width: 15rem;
     position: relative;
@@ -44,12 +50,31 @@ label{
 }
 
 
-@media screen and (max-width:860px){
+@media screen and (max-width:756px){
 .last__Name{
+    width:16.7rem;
+}
+.first__Name{
     margin-left:0;
-    width:19rem;
+    width: 16.7rem;
 }
 .email__input{
-    width: 19rem;
+    width:35rem;
+}
+
+.formInput:nth-child(1) {
+    width: 17rem;
+}
+}
+@media screen and (max-width:600px){
+    .formInput {
+        margin-bottom: 0.6rem;
+    }
+.last__Name{
+    margin-left:0;
+    width:16.7rem;
+}
+.email__input{
+    width:16.7rem;
 }
 }

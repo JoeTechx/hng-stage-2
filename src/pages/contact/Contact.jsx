@@ -88,7 +88,11 @@ const Contact = () => {
           />
         ))}
         <CheckBox/>
-        <button>send Message</button>
+        <div className="btn__submit btn">
+        <a href = "./" className="btn__link submit">
+          Send message
+        </a>
+        </div>
       </form>
     </div>
   );
