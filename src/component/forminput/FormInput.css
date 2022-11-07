@@ -1,80 +1,77 @@
-input{
-    padding: 0.5rem 1rem 0.5rem 0.2rem;
-    border-radius:0.5rem;
-    outline: none;
-    border: 1.9px solid #c4c3c3;
-    
+input {
+  padding: 0.5rem 1rem 0.5rem 0.2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1.9px solid #c4c3c3;
 }
 
-.last__Name{
-    width:20rem;
-    margin-left: 1.5rem;
-    margin-bottom:0.5rem;
+.last__Name {
+  width: 20rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-.first__Name{
-    width:19rem;
-}
-
-label{
-    font-size:0.7rem;
-    margin-bottom:0.5rem;
+.first__Name {
+  width: 19rem;
 }
 
-
-.email__input{
-    width: 40.6rem;
+label {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
-.formInput{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    /* justify-content: center; */
+.email__input {
+  width: 40.6rem;
 }
 
-.formInput:nth-child(1){
-    width: 19rem;
-    position: relative;
-    left: 0;
-}
-
-.formInput:nth-child(2){
-    width: 15rem;
-    position: relative;
-    left: 0;
-}
-.formInput:nth-child(3){
-    width: 15rem;
-    position: relative;
-    left: 0;
-}
-
-
-@media screen and (max-width:756px){
-.last__Name{
-    width:16.7rem;
-}
-.first__Name{
-    margin-left:0;
-    width: 16.7rem;
-}
-.email__input{
-    width:35rem;
+.formInput {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  /* justify-content: center; */
 }
 
 .formInput:nth-child(1) {
+  width: 19rem;
+  position: relative;
+  left: 0;
+}
+
+.formInput:nth-child(2) {
+  width: 15rem;
+  position: relative;
+  left: 0;
+}
+.formInput:nth-child(3) {
+  width: 15rem;
+  position: relative;
+  left: 0;
+}
+
+@media screen and (max-width: 756px) {
+  .last__Name {
+    width: 16.7rem;
+  }
+  .first__Name {
+    margin-left: 0;
+    width: 16.7rem;
+  }
+  .email__input {
+    width: 35rem;
+  }
+
+  .formInput:nth-child(1) {
     width: 17rem;
+  }
 }
-}
-@media screen and (max-width:600px){
-    .formInput {
-        margin-bottom: 0.6rem;
-    }
-.last__Name{
-    margin-left:0;
-    width:16.7rem;
-}
-.email__input{
-    width:16.7rem;
-}
+@media screen and (max-width: 600px) {
+  .formInput {
+    margin-bottom: 0.6rem;
+  }
+  .last__Name {
+    margin-left: 0;
+    width: 16.7rem;
+  }
+  .email__input {
+    width: 16.7rem;
+  }
 }

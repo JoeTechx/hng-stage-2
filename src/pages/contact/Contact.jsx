@@ -2,6 +2,7 @@ import { useState } from "react";
 import CheckBox from "../../component/checkbox/CheckBox";
 import FormInput from "../../component/forminput/FormInput";
 import Textarea from "../../component/textarea/Textarea";
+import Footer from "../../component/footer/Footer";
 import "./Contact.css";
 
 const Contact = () => {
@@ -30,7 +31,7 @@ const Contact = () => {
     {
       id: "first__Name",
       name: "firstName",
-      className:'first__Name',
+      className: "first__Name",
       type: "text",
       placeholder: "Enter your First Name",
       label: "First Name",
@@ -63,37 +64,40 @@ const Contact = () => {
   };
   console.log(Values);
   return (
-    <div className="app">
-      <div className="contact__header">
-        <p className="header__title">Contact Me</p>
-        <small className="header__subtitle">
-          Hi there, contact me to ask me about anything you have in mind.
-        </small>
-      </div>
-      <form onSubmit={handleSubmit}>
-        {inputs.map((input) => (
-          <FormInput
-            key={input.id}
-            {...input}
-            value={Values[input.name]}
-            onChange={onChange}
-          />
-        ))}
-        {textAreas.map((textArea) => (
-          <Textarea
-            key={textArea.id}
-            {...textArea}
-            value={TextAreaValue[textArea.name]}
-            onChange={onChange}
-          />
-        ))}
-        <CheckBox/>
-        <div className="btn__submit btn">
-        <a href = "./" className="btn__link submit">
-          Send message
-        </a>
+    <div className="contact__app">
+      <div className="app">
+        <div className="contact__header">
+          <p className="header__title">Contact Me</p>
+          <small className="header__subtitle">
+            Hi there, contact me to ask me about anything you have in mind.
+          </small>
         </div>
-      </form>
+        <form onSubmit={handleSubmit}>
+          {inputs.map((input) => (
+            <FormInput
+              key={input.id}
+              {...input}
+              value={Values[input.name]}
+              onChange={onChange}
+            />
+          ))}
+          {textAreas.map((textArea) => (
+            <Textarea
+              key={textArea.id}
+              {...textArea}
+              value={TextAreaValue[textArea.name]}
+              onChange={onChange}
+            />
+          ))}
+          <CheckBox />
+          <div className="btn__submit btn">
+            <a href="./" className="btn__link submit">
+              Send message
+            </a>
+          </div>
+        </form>
+      </div>
+      <Footer />
     </div>
   );
 };
