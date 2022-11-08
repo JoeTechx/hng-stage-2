@@ -45,9 +45,20 @@ form {
   text-decoration: none;
   text-transform: capitalize;
   transition: 400ms all ease;
+  cursor: pointer;
+  border: none;
 }
 .contact__app {
   width: 85vw;
+}
+
+.submit:disabled{
+  background-color: #b6d2f4 !important;
+  cursor: default;
+}
+.submit:enabled{
+  background-color: #066bf0 !important;
+  cursor: pointer;
 }
 footer {
   width: 100%;

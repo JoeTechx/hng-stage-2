@@ -47,6 +47,22 @@ label {
   left: 0;
 }
 
+span{
+  font-size: 12px;
+  padding: 3px;
+  color: #ff0000;
+  display: none;
+}
+
+input:invalid[focused= "true" ]{
+  border: 1px solid #ff0000;
+}
+
+input:invalid[focused= "true" ] ~ span{
+  display: block;
+}
+
+
 @media screen and (max-width: 756px) {
   .last__Name {
     width: 16.7rem;

@@ -1,12 +1,13 @@
-import React from 'react'
-import "./CheckBox.css"
-const CheckBox = () => {
+import React from "react";
+import "./CheckBox.css";
+const CheckBox = (props) => {
+  const { label, errorMessage, onChange, id, ...checkBoxProps } = props;
   return (
-    <div className='checkbox'>
-    <input type="checkbox" className='checkbox__input'/>
-    <label className="label__input">You agree to provide your data to Joex who may contact you</label>
+    <div className="checkbox">
+      <input onChange={onChange} {...checkBoxProps} />
+      <label className="label__input">{label}</label>
     </div>
-  )
-}
+  );
+};
 
-export default CheckBox
+export default CheckBox;
