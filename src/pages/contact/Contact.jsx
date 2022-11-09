@@ -90,7 +90,6 @@ const Contact = () => {
 const handleChange = (e) => {
   setDisable(false);
 }
-
   const onChange = (e) => {
     setValues({ ...Values, [e.target.name]: e.target.value });
     setTextarea({ ...TextAreaValue, [e.target.name]: e.target.value });
